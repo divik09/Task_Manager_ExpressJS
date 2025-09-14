@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  redis:
+    host: redis
+    port: 6379
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery-service:8761/eureka/
+  instance:
+    hostname: api-gateway
+    prefer-ip-address: true
+    ip-address: api-gateway
+
+jwt:
+  secret: mySecretKey12345678901234567890123456789012

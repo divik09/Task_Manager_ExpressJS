@@ -1,0 +1,36 @@
+/* Global styles */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.main-container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.sidebar {
+  background-color: #343a40;
+  color: white;
+  min-height: 100vh;
+}
+
+.content-area {
+  padding: 20px;
+}
+
+.task-card {
+  border-left: 4px solid #007bff;
+  transition: transform 0.2s;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.priority-high { border-left-color: #dc3545; }
+.priority-medium { border-left-color: #ffc107; }
+.priority-low { border-left-color: #28a745; }
+
+.status-todo { background-color: #f8f9fa; }
+.status-progress { background-color: #e3f2fd; }
+.status-done { background-color: #e8f5e8; }
